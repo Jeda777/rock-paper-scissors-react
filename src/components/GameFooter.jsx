@@ -10,9 +10,11 @@ const GameFooter = ({ setMenuState, isGameModified }) => {
       <button onClick={() => setRulesOpen(true)}>Rules</button>
       {rulesOpen ? (
         <div id='game-rules'>
-          <p>Rules</p>
-          <img id='rules-img' src={isGameModified ? imageRulesBonus : imageRules} alt='' />
-          <img src={iconClose} alt='' id='close-btn' onClick={() => setRulesOpen(false)} />
+          <div className='container'>
+            <p>Rules</p>
+            <img id='rules-img' src={isGameModified ? imageRulesBonus : imageRules} alt='' />
+            <img src={iconClose} alt='' id='close-btn' onClick={() => setRulesOpen(false)} />
+          </div>
         </div>
       ) : (
         ''

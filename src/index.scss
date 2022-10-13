@@ -267,20 +267,26 @@ body {
         left: 0;
         top: 0;
         display: flex;
-        padding: 2;
-        flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
-        p {
-          color: $Dark-Text;
-          font-size: 38px;
-          font-weight: 700;
-        }
-        #rules-img {
-          width: 90vmin;
-        }
-        #close-btn {
-          cursor: pointer;
+        justify-content: center;
+        .container {
+          background: white;
+          display: flex;
+          padding: 2;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          p {
+            color: $Dark-Text;
+            font-size: 38px;
+            font-weight: 700;
+          }
+          #rules-img {
+            width: 90vmin;
+          }
+          #close-btn {
+            cursor: pointer;
+          }
         }
       }
     }
@@ -429,6 +435,39 @@ body {
         button {
           font-size: 24px;
           padding: 0.75rem 1.5rem;
+        }
+        #game-rules {
+          position: absolute;
+          width: 100vw;
+          height: 100vh;
+          background: rgb(0 0 0 / 0.4);
+          left: 0;
+          top: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .container {
+            background: white;
+            display: flex;
+            padding: 4rem;
+            border-radius: 2rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            p {
+              color: $Dark-Text;
+              font-size: 38px;
+              font-weight: 700;
+            }
+            #rules-img {
+              width: 90vmin;
+              max-width: 500px;
+            }
+            #close-btn {
+              cursor: pointer;
+            }
+          }
         }
       }
       &.modified {

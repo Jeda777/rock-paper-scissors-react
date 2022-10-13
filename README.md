@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution]()
-- [Live site]()
+- [Solution](https://www.frontendmentor.io/solutions/rock-paper-scissors-react-scss-rNcrZXxaJt)
+- [Live site](https://dancing-hummingbird-4cbfd1.netlify.app/)
 
 ## Built with
 
